@@ -1,0 +1,519 @@
+@font-face {
+    font-family: 'Rimouski SemiBold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Rimouski SemiBold'), url('rimouski sb.woff') format('woff');
+    }
+#bg{
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+    position: absolute;
+    font-family: 'Playfair Display SC', serif;
+    background-image: url('./img/bg.png')
+}
+#next,#previous{
+    display: block;
+    width: 121px;
+    background: transparent;
+    height: 59px;
+    background-image: url(./img/5.png);
+    position: absolute;
+    background-size: 100% 100%;
+    top: 81vh;
+    left: 84.5vw;
+    border: 0;
+}
+#previous{
+    background-image: url(./img/4.png);
+    left: 18.78vw;
+    display: none;
+}
+#preload{position: absolute;top: 40vh;left: 40vw;}
+@media print {
+    li {
+      page-break-inside: avoid;
+    }}
+    #Pronoun{width: 25px;}#Pronoun3{width: 25px;}#Pronoun4{width: 25px;}
+    #PP,#NP{margin-left: 35px;}
+#header{
+    height: auto;
+    display: none;
+    align-content: center;
+    flex-direction: column;
+    margin: 2% 1%;
+    background-color: #c9cbcb;
+    padding: 2%;
+    width: 90%;
+    word-break: break-word;
+    text-align: left;
+    font-family: 'Calibri',sans-serif;
+    font-size: 13.33px;
+    
+}
+#prosel,#prosel1,#prosel2,#prosel3,#prosel4,#Noun1,#Noun2,#Noun3{
+    display:flex;
+    align-items: center;
+}
+#prosel,#prosel1,#prosel2,#prosel3,#prosel4{
+    width: 98%;
+}
+#Noun1,#Noun2,#Noun3{
+    width: 98%;
+}
+#Startnoun2{
+    width:33vw;
+}
+#Startsentence1, #Startsentence2,#Startsentence3,#Startsentence4,#Startsentence5,#Startnoun1,#Startnoun2,#Startnoun3{
+    display:none;
+}
+#save{width: 1.12vw;padding-left: 10px;}
+#test{
+
+    width: 100%;
+    text-align: center;
+}
+#school{
+    
+    width: 100%;
+    text-align: center;
+
+}
+#marks{
+
+    margin-left: 10%;
+}
+#student{
+    margin-left: 10%;
+}
+#marksobt{
+    margin-left: 20%;
+
+}
+#Headchange{
+    width: 120;
+    height: 40px;
+    background-color: #cedfd9;
+    margin: 10px;
+    border: 0;
+}
+#selection{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 2.5vw;
+    background-color: #eeeeee;
+    border-bottom: 1px solid grey;
+    margin-bottom: 34px;
+    font-size: 16PX;
+    color: #01a0e2;
+    box-shadow: 8px 4px 12px #ab80bdcc;
+    align-content: center;
+    border-radius: 50px;
+}
+#noun{
+    margin: 1% 10%;
+    height: 35px;
+    width: 26px;
+}
+#pron{
+    margin: 1% 10%;
+    height: fit-content;
+    width: 100%;
+}
+.tab{
+    padding-left: 20px;
+}
+#ol,#NOUN{
+    background-color: #e5c1ff94;
+    backdrop-filter: blur(4px);
+    margin-left: 3%;
+    padding: 20px;
+    width: 80vw;
+    display: none;
+    flex-direction: column;
+    z-index: 1;
+    align-items: flex-start;
+    align-content: space-between;
+    border: 1px solid #9a90981f;
+    box-shadow: 10px 5px 20px #ccc9c9;
+    color: #100119;
+    border-radius: 4vw;
+}
+    #ol {
+        position: absolute;
+        top: -4vw;
+        width: 98%;
+        left: -5%;
+        font-size: 16px;
+    }
+#NOUN{    position: absolute;
+    top: 0vw;
+    left: -6%;
+    width: 98%;
+    font-size: 16px;
+}
+#savepro,#saven{
+    margin-left: 30vw;
+    margin-top: 20px;
+    height: 2.5vw;
+    background-color: #00a277;
+    border: 0px;
+    color: whitesmoke;
+    width: 7vw;
+    border-radius: 30px;
+    font-size: 1.1vw;
+    box-shadow: 2px 4px 1px #b1b1b1;
+    cursor: pointer;
+    font-family: 'Rimouski SemiBold';
+}
+#download,#pdf{
+    display: none;
+    margin: 2% 5%;
+    width: 12.5vw;
+    height: 3vw;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9vw;
+    border-radius: 1.05vw;
+    background-color: #e41c3e;
+    color: #fefefe;
+    padding: 25px;
+    border: 0;
+    box-shadow: 2px 5px 20px #000000;
+    font-family: 'Rimouski SemiBold';
+    border-top: 2px solid #f5f5f5;
+    border-right: 1px solid #bdabab;
+    cursor: pointer;
+}
+#txtone{
+    position: absolute;
+    font-size: 17px;
+    font-weight: 400;
+    top: 24vh;
+    left: 12vw;
+    color: black;
+}
+#txttwo{
+    margin: 0;
+    font-size: 16px;
+    position: absolute;
+    top: 44vh;
+    left: 12vw;
+    color: black;
+}
+#TotalMarks{
+    margin: 0;
+    font-size: 16px;
+    position: absolute;
+    top: 43vh;
+    left: 27vw;
+    border: 1px solid #bababa;
+}
+#TotalTime{
+        width: 4vw;
+    height: 4vh;
+    border-radius: 22px;
+    border: 0;
+    font-size: 20px;
+    padding-left: 15px;
+    top: 41%;
+    left: 27vw;
+    position: absolute;
+    border: 1px solid #bababa;
+}
+#txtthree{
+    font-size: 16px;
+    position: absolute;
+    top: 36vh;
+    left: 12vw;
+    color: black;
+    margin: 0;
+}
+#questiontype{
+padding: 10px;
+font-family: 'Rimouski SemiBold';
+margin: 0;
+font-size: 16px;
+position: absolute;
+top: 51vh;
+left: 11.5vw;
+color: black;
+}
+#TestName{
+    position: absolute;
+    top: 25.5vh;
+    left: 27vw;
+    border: 1px solid #bababa;
+}
+#savebtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#pdf{
+    margin-left: 2%;
+    align-items: center;
+}
+#download:hover{
+    transform:scale(1.1);
+}
+#pdf:hover{
+    transform:scale(1.1);
+}
+#paper{
+    background-color: #c9cfd312;
+    backdrop-filter: blur(5px);
+    margin: 0% 10%;
+    padding: 20px;
+    height: 64vh;
+    box-shadow: 11px 10px 15px #202020;
+    display: none;
+    overflow-y: scroll;
+    overflow-x: clip;
+    position: relative;
+    top: -6vh;
+    left: -1vw;
+    color: black;
+}
+#Headchangediv{
+    margin: 1% 10%;
+    left: 31vw;
+}
+#editp {position: relative;color: rgb(1 160 226);right: -76%;display: none;
+}#svgp{display: none;width: 1.55vw;right: 7.6vw;position: absolute;}
+#editn{position: relative;color: rgb(1 160 226);right: -78%;display: none;}#svgn{display: none;width: 1.55vw;right: 7.6vw;position: absolute;}
+#head2{margin-left: 31%;padding: 10px; height: 58px;width: 158px;background-color: #0094e9;box-shadow: 6px 4px 60px #00000052;color: #e9fbff; border: 0;border-radius: 21vw;font-size: 19px;cursor:pointer}
+/* Loading Css */
+@keyframes ldio-n8zqosl3re {
+    0% { opacity: 1 }
+    50% { opacity: .5 }
+    100% { opacity: 1 }
+  }
+  .ldio-n8zqosl3re div {
+    position: absolute;
+    width: 20px;
+    height: 80px;
+    top: 60px;
+    animation: ldio-n8zqosl3re 1s cubic-bezier(0.5,0,0.5,1) infinite;
+  }.ldio-n8zqosl3re div:nth-child(1) {
+    transform: translate(30px,0);
+    background: #118ba7;
+    animation-delay: -0.6s;
+  }.ldio-n8zqosl3re div:nth-child(2) {
+    transform: translate(70px,0);
+    background: #176abf;
+    animation-delay: -0.4s;
+  }.ldio-n8zqosl3re div:nth-child(3) {
+    transform: translate(110px,0);
+    background: #6af2f8;
+    animation-delay: -0.2s;
+  }.ldio-n8zqosl3re div:nth-child(4) {
+    transform: translate(150px,0);
+    background: #6986c7;
+    animation-delay: -1s;
+  }
+  .loadingio-spinner-bars-fz14p5162i7 {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    overflow: hidden;
+    background: #ffffff00;
+  }
+  .ldio-n8zqosl3re {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform: translateZ(0) scale(1);
+    backface-visibility: hidden;
+    transform-origin: 0 0; /* see note above */
+  }
+  .ldio-n8zqosl3re div { box-sizing: content-box; }
+.head3{
+    font-family: 'Rimouski SemiBold';
+    margin-left: 45%;
+    padding: 10px;
+    height: 58px;
+    width: 158px;
+    background-color: #0094e9;
+    box-shadow: 6px 4px 60px #00000052;
+    color: #e9fbff;
+    border: 0;
+    border-radius: 21vw;
+    font-size: 19px;
+    cursor: pointer;
+}
+#QuestionType{
+    height: 43px;
+    width: 93px;
+    font-family: 'Rimouski SemiBold';
+    border-radius: 50px;
+    border: 0;
+    position: absolute;
+    top: 51vh;
+    left: 27vw;
+    border: 1px solid #bababa;
+}
+#thirdpart{
+    display: none;
+}
+#saveit{
+    display:none;
+}
+#headerdiv,#headerdiv2,#headerdiv3,#headerdiv4,#headerdiv5{
+    position: relative;
+    display: inline-block;
+    width: 120%;
+    height: max-content;
+    top: -6vh;
+    left: -2vw;
+}
+#step,#step2,#step3,#step4,#step5{
+    position: relative;
+    width: 20%;
+    height: 100px;
+    background-color: #7f4ec4;
+    font-size: 16px;
+    float: left;
+}#step p,#step2 p,#step3 p,#step4 p,#step5 p{
+    position: relative;
+    top: 22%;
+    left: 37%;
+    font-size: 26px;
+    font-family: 'Rimouski SemiBold';
+}
+#selectionName,#selectionName2,#selectionName3,#selectionName4,#selectionName5{
+    position: relative;
+    width: 80%;
+    height: 100px;
+    background-color: #b1b1b1;
+    font-size: 16px;
+    float: right;
+}#selectionName p,#selectionName2 p,#selectionName3 p,#selectionName4 p,#selectionName5 p {    position: relative;
+    top: 29%;
+    left: 7%;
+    font-size: 22px;
+    font-family: 'Rimouski SemiBold';}
+#alert{
+    width: 30vw;
+    height: auto;
+    position: relative;
+    left: 22vw;
+    display: none;
+}
+#hidealert{
+    width: 92px;
+    height: 28px;
+    background: transparent;
+    z-index: 1;
+    position: relative;
+    left: 60%;
+    border: 0;
+    top: -7vh;
+    background-image: url(./img/2.png);
+    background-size: 100% 100%;
+    display: none;
+}
+#secondpart,#paperpart{
+    display: none;
+}
+#step2{
+    background-color: #01a0e2;
+}
+#ChangePartdiv{
+    display: block;
+    margin: 2%;
+    font-family: "Rimouski SemiBold", serif;
+    font-weight: 900;
+    width: 98%;
+    position: relative;
+}
+#Nouninput{
+    height: 23px;
+    width: 26px;
+    position: relative;
+    right: -82%;
+}
+#Pronouninput{
+    height: 23px;
+    width: 26px;
+    position: relative;
+    right: -80%;
+}
+#Noofnoun2,#Noofnoun,#Noofnoun3{
+    width: 40px;
+    height: 35px;
+    font-size: 21px;
+    border-radius: 14px;
+    border: 0;
+    padding-left: 6px;
+}
+#Noofpronoun,#Identifypronoun,#Identifypronoun1,#Identifypronoun2,#Identifypronoun3{
+    width: 40px;
+    height: 35px;
+    font-size: 18px;
+    padding-left: 8px;
+    border: 0;
+    border-radius: 11px;
+}
+#btn1,#btn2,#btn3,#btn4,#btn5,#btn6 {
+    background: transparent;
+    background-image: url(./img/6.png);
+    position: absolute;
+    width: 13vw;
+    height: 6vh;
+    background-size: 100% 100%;
+    top: 25vh;
+    left: 2vw;
+    border: 0;
+}
+#btn2{
+    background-image: url(./img/7.png);
+    top: 36vh;
+    opacity: 0.5;
+}
+#btn3{
+    background-image: url(./img/8.png);
+    top: 47vh;
+    opacity: 0.5;
+}
+#btn4{
+    background-image: url(./img/9.png);
+    top: 58vh;
+    opacity: 0.5;
+}
+#btn5{
+    background-image: url(./img/10.png);
+    top: 69vh;
+    opacity: 0.5;
+}
+#btn6{
+    background-image: url(./img/11.png);
+    top: 80vh;
+    opacity: 0.5;
+}
+#showmarks{
+    color: black;
+    position: relative;
+    top: 12vh;
+    font-family: 'Rimouski SemiBold';
+    left: 11vw;
+    font-size: 22px;
+}
+#showmarksp{
+    position: relative;
+    font-size: 64px;
+    left: 30%;
+    font-family: cursive;
+    color: #fcbf00;
+}
+
+
+ 
+
+
+
+
+  
